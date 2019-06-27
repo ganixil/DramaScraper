@@ -97,10 +97,15 @@ def genre_menu():
 
 def rating_menu():
     #TODO sorting algorithm which sort the movies by rating
+    clear()
+    for movie in output:
+        if output[movie][0] != None:
+            print(movie,'|',output[movie][0],'|',output[movie][1],'|',output[movie][2])
     return
 
 def name_menu():
     #list all the movies
+    clear()
     for i in range(page*10, page*10+10):
         print(name[i])
 
